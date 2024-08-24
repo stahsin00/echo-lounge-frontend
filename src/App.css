@@ -28,3 +28,7 @@ button {
 button:hover {
   border-color: white;
 }
+
+.hover-cursor:hover {
+  cursor: pointer;
+}

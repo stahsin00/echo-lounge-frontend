@@ -1,0 +1,33 @@
+.menu {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.main-button {
+    background-color: rgb(255, 0, 76);
+    font-size: x-large;
+    margin: 2px;
+}
+
+.sub-menu {
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.sub-menu button {
+    font-size: larger;
+    width: 8rem;
+}
+
+#exit-button {
+    color: rgb(255, 0, 76);
+}
+
+.button-icon {
+    margin-right: 4px;
+}

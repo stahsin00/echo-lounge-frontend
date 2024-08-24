@@ -1,0 +1,55 @@
+.make-drink {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.ingredient-list {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mixing-area {
+    height: 100%;
+    width: 50%;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.single-amount {
+    width: 1.65rem;
+    height: 8rem;
+    background-color: white;
+}
+
+.mixing-area-buttons {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.mixing-area button {
+    background-color: rgb(255, 0, 76);
+    font-size: larger;
+    width: 100%;
+    margin-top: 0.5rem;
+}

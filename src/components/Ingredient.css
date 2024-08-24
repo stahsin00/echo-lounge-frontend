@@ -1,0 +1,12 @@
+.ingredient {
+    font-size: xx-large;
+    width: 90%;
+    height: 8rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -9,8 +9,7 @@ function Game() {
       <div className="game">
         <div className="area">
             <div className="character">
-                <div>Logo</div>
-                Character
+                <div className='logo'>Echo Lounge</div>
             </div>
             <div className='work-area'>
                 <div className="menu">

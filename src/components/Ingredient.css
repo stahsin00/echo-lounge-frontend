@@ -5,8 +5,24 @@
     margin: 1rem;
     padding: 1rem;
     border-radius: 8px;
-    background-color: #1a1a1a;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.bubbly-quasar {
+    color: rgb(57, 248, 248);
+}
+
+.dark-matter-brew {
+    color: rgb(65, 236, 122);
+}
+
+.nebula-nectar {
+    color: rgb(253, 161, 56);
+}
+
+.plasma-pepper {
+    color: rgb(255, 66, 113);
 }

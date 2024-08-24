@@ -26,8 +26,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+    margin: 0.5rem;
 }
 
 .row {
@@ -38,18 +37,39 @@
 .single-amount {
     width: 1.65rem;
     height: 8rem;
-    background-color: white;
+    background-color: rgba(194, 194, 194, 0.6);
 }
 
 .mixing-area-buttons {
     width: 100%;
+    background-color: #1a1a1a;
     position: absolute;
     bottom: 0;
 }
 
 .mixing-area button {
     background-color: rgb(255, 0, 76);
-    font-size: larger;
+    font-size: x-large;
     width: 100%;
     margin-top: 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubbly-quasar {
+    background-color: rgb(57, 248, 248);
+}
+
+.dark-matter-brew {
+    background-color: rgb(65, 236, 122);
+}
+
+.nebula-nectar {
+    background-color: rgb(253, 161, 56);
+}
+
+.plasma-pepper {
+    background-color: rgb(255, 66, 113);
 }

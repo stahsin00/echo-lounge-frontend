@@ -3,8 +3,10 @@ import Setting from '../components/Setting';
 import Dialog from '../components/Dialog';
 import Menu from '../components/Menu';
 import MakeDrinks from '../components/MakeDrinks';
+import { useState } from 'react';
 
 function Game() {
+    const [selection, setSelection] = useState("Drinks");
 
   return (
     <>
@@ -14,9 +16,11 @@ function Game() {
                 <div className='logo'>Echo Lounge</div>
             </div>
             <div className='work-area'>
-                <Menu />
+                <Menu setSelection={setSelection}/>
                 <div className="drink">
-                    <MakeDrinks />
+                    {
+                        (selection === "Drinks") ? <MakeDrinks /> : <Setting />
+                    }
                 </div>
             </div>
         </div>

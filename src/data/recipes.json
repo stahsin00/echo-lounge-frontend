@@ -1,0 +1,88 @@
+{
+    "drinks": [
+      {
+        "name": "Nebula Caress",
+        "description": "A predominantly sweet drink with a touch of sparkle, warmth, and depth. The high proportion of Nebula Nectar gives it a gentle, comforting flavor, while the Bubbly Quasar adds lightness, and subtle hints of spice and bitterness round it out.",
+        "ingredients": {
+          "bubbly-quasar": 2,
+          "dark-matter-brew": 1,
+          "nebula-nectar": 6,
+          "plasma-peppers": 1
+        },
+        "flavors": ["sweet"],
+        "personality": "Sweet, Warm, Kind, Gentle"
+      },
+      {
+        "name": "Stellar Spark",
+        "description": "A bright and effervescent drink with a sweet base. The Bubbly Quasar takes center stage, making it lively and fun, with Nebula Nectar adding sweetness and just a touch of spice and bitterness for complexity.",
+        "ingredients": {
+          "bubbly-quasar": 5,
+          "nebula-nectar": 3,
+          "plasma-peppers": 1,
+          "dark-matter-brew": 1
+        },
+        "flavors": ["bubbly"],
+        "personality": "Playful, Fun-Loving, Light-Hearted"
+      },
+      {
+        "name": "Inferno Burst",
+        "description": "A fiery, intense drink dominated by the heat of Plasma Peppers and the deep bitterness of Dark Matter Brew. The small amounts of Bubbly Quasar and Nebula Nectar soften the edges slightly, but the bold flavors remain the star.",
+        "ingredients": {
+          "plasma-peppers": 5,
+          "dark-matter-brew": 3,
+          "bubbly-quasar": 1,
+          "nebula-nectar": 1
+        },
+        "flavors": ["spicy"],
+        "personality": "Fierce, Bold, Intense, Passionate"
+      },
+      {
+        "name": "Quasar Curiosity",
+        "description": "A balanced, exploratory drink with equal parts of all four ingredients. The interplay of bitterness, spice, sweetness, and bubbles creates a drink that's always surprising, appealing to the curious and adventurous.",
+        "ingredients": {
+          "dark-matter-brew": 2,
+          "plasma-peppers": 3,
+          "nebula-nectar": 3,
+          "bubbly-quasar": 2
+        },
+        "flavors": ["sweet","spicy"],
+        "personality": "Curious"
+      },
+      {
+        "name": "Silent Reflection",
+        "description": "A serious, introspective drink with a strong bitter flavor from Dark Matter Brew, balanced by a moderate amount of sweetness from Nebula Nectar. The small addition of Bubbly Quasar and Plasma Peppers adds depth without overwhelming the drink.",
+        "ingredients": {
+          "dark-matter-brew": 5,
+          "nebula-nectar": 2,
+          "plasma-peppers": 1,
+          "bubbly-quasar": 2
+        },
+        "flavors": ["bitter"],
+        "personality": "Reserved, Quiet, Introspective"
+      },
+      {
+        "name": "Gravitas",
+        "description": "A strong, no-nonsense drink that’s heavy on the bitter, with just enough spice, bubble, and sweetness to keep it balanced. It’s a drink for those who appreciate focus and simplicity.",
+        "ingredients": {
+          "dark-matter-brew": 7,
+          "plasma-peppers": 1,
+          "bubbly-quasar": 1,
+          "nebula-nectar": 1
+        },
+        "flavors": ["bitter"],
+        "personality": "Serious, Focused, Pragmatic"
+      },
+      {
+        "name": "Eclipse Reverie",
+        "description": "A reflective, bittersweet drink with equal parts bitterness and sweetness. The Nebula Nectar and Dark Matter Brew provide a contemplative base, while the hint of spice and bubbles adds an extra layer of depth.",
+        "ingredients": {
+          "dark-matter-brew": 4,
+          "nebula-nectar": 4,
+          "plasma-peppers": 1,
+          "bubbly-quasar": 1
+        },
+        "flavors": ["bitter","sweet"],
+        "personality": "Melancholic, Reflective"
+      }
+    ]
+  }

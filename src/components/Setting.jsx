@@ -45,6 +45,7 @@ function Setting() {
             />
             <span>{muteMusic? 0 : music}</span>
         </div>
+        <hr></hr>
         <div className='setting'>
             <FaVolumeDown className='setting-icon hover-cursor' onClick={() => setMuteVolume(!muteVolume)} />
             <input
@@ -57,6 +58,7 @@ function Setting() {
             />
             <span>{muteVolume ? 0 : volume}</span>
         </div>
+        <hr></hr>
         <div className='setting'>
             <FaForward className='setting-icon' />
             <span className='setting-span'>

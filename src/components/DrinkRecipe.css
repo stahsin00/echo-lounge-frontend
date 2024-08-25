@@ -71,24 +71,21 @@
     padding: 5px;
     border-radius: 5px;
     display: inline;
+    color: black;
 }
 
 .bubbly-quasar-amount {
-    color: rgb(57, 248, 248);
-    border: 1px solid rgb(57, 248, 248);
+    background-color: rgb(57, 248, 248);
 }
 
 .dark-matter-brew-amount {
-    color: rgb(65, 236, 122);
-    border: 1px solid rgb(65, 236, 122);
+    background-color: rgb(65, 236, 122);
 }
 
 .nebula-nectar-amount {
-    color: rgb(253, 161, 56);
-    border: 1px solid rgb(253, 161, 56);
+    background-color: rgb(253, 161, 56);
 }
 
 .plasma-peppers-amount {
-    color: rgb(255, 66, 113);
-    border: 1px solid rgb(255, 66, 113);
+    background-color: rgb(255, 66, 113);
 }

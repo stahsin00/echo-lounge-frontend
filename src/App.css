@@ -22,7 +22,10 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  display: inline-flex;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {

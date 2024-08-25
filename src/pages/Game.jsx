@@ -3,6 +3,7 @@ import Setting from '../components/Setting';
 import Dialog from '../components/Dialog';
 import Menu from '../components/Menu';
 import MakeDrinks from '../components/MakeDrinks';
+import Recipes from '../components/Recipes';
 import { useState } from 'react';
 
 function Game() {
@@ -19,7 +20,7 @@ function Game() {
                 <Menu setSelection={setSelection}/>
                 <div className="drink">
                     {
-                        (selection === "Drinks") ? <MakeDrinks /> : <Setting />
+                        (selection === "Drinks") ? <MakeDrinks /> : ((selection === "Settings") ? <Setting /> : <Recipes />)
                     }
                 </div>
             </div>

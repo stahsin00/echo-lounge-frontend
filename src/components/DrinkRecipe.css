@@ -1,0 +1,94 @@
+.drink-recipe {
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
+.recipes .drink-recipe:last-child {
+    border-bottom: none;
+}
+
+.drink-main {
+    background-color: black;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.drink-info {
+    padding: 0.5rem;
+}
+
+.drink-info h1 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.drink-info p {
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+}
+
+.drink-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drink-flavors{
+    font-size: x-large;
+}
+
+.sweet {
+    color: rgb(253, 161, 56);
+}
+
+.spicy {
+    color: rgb(255, 66, 113);
+}
+
+.bitter {
+    color: rgb(65, 236, 122);
+}
+
+.bubbly {
+    color: rgb(57, 248, 248);
+}
+
+.ingredients {
+    width: 100%;
+    padding: 0 1.5rem;
+    padding-top: 0.5rem;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bubbly-quasar-amount, .dark-matter-brew-amount, .nebula-nectar-amount, .plasma-peppers-amount {
+    width: 5rem;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline;
+}
+
+.bubbly-quasar-amount {
+    color: rgb(57, 248, 248);
+    border: 1px solid rgb(57, 248, 248);
+}
+
+.dark-matter-brew-amount {
+    color: rgb(65, 236, 122);
+    border: 1px solid rgb(65, 236, 122);
+}
+
+.nebula-nectar-amount {
+    color: rgb(253, 161, 56);
+    border: 1px solid rgb(253, 161, 56);
+}
+
+.plasma-peppers-amount {
+    color: rgb(255, 66, 113);
+    border: 1px solid rgb(255, 66, 113);
+}

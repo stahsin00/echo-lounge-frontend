@@ -12,9 +12,10 @@ function Game() {
   return (
     <>
       <div className="game">
+        <div className='logo'>Echo Lounge</div>
         <div className="area">
             <div className="character">
-                <div className='logo'>Echo Lounge</div>
+              <img src="Dorothy_Haze.webp" alt="A customer." className='customer'/>
             </div>
             <div className='work-area'>
                 <Menu setSelection={setSelection}/>

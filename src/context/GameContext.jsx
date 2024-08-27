@@ -12,9 +12,10 @@ export function GameProvider(props) {
     const [state, setState] = useState("Observing");
     const [customer, setCustomer] = useState();
     const [observation, setObservation] = useState();
+    const [speech, setSpeech] = useState();
 
     const getNextCustomer = async () => {
-        if (state == "Waiting") return;
+        if (state === "Waiting") return;
         setCustomer(null);
         setState("Waiting");
 
@@ -41,14 +42,56 @@ export function GameProvider(props) {
         }
     }
 
+    const speak = () => {
+        if (state !== "Deciding") return;
+        setState("Speaking");
+    }
+
+    const listen = async (userInput = "") => {
+        if (state == "Waiting") return;
+        setState("Waiting");
+
+        try {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/dialog`, {
+                method: 'POST',
+                body: JSON.stringify({ userInput: userInput }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error("The Customer could not speak.");
+            }
+
+            const result = await response.json();
+
+            console.log(result);
+
+            setSpeech(result.message);
+            setState("Listening");
+        } catch (e) {
+            console.error(e);
+            setObservation("The customer’s consciousness seems to be buffering…");
+            setState("Observing");
+        }
+    }
+
+    const decide = () => {
+        if (state != "Listening" && state != "Observing") return;
+        setState("Deciding");
+    }
+
     const value = {
         state,
         setState,
         customer,
-        setCustomer,
         observation,
-        setObservation,
-        getNextCustomer
+        speech,
+        getNextCustomer,
+        speak,
+        listen,
+        decide
     }
 
     return (<GameContext.Provider value={value}>{props.children}</GameContext.Provider>)

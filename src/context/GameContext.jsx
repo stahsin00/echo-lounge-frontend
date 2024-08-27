@@ -54,7 +54,7 @@ export function GameProvider(props) {
         try {
             const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/dialog`, {
                 method: 'POST',
-                body: JSON.stringify({ userInput: userInput }),
+                body: JSON.stringify({ userInput: userInput, customer: customer }),
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -69,6 +69,7 @@ export function GameProvider(props) {
             console.log(result);
 
             setSpeech(result.message);
+            setCustomer(result.customer);
             setState("Listening");
         } catch (e) {
             console.error(e);

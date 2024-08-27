@@ -32,23 +32,6 @@
     flex-direction: row;
 }
 
-.character {
-    width: 60%;
-    height: 100%;
-    background-color: rgb(32, 26, 37);
-    border-bottom: 1px solid #1a1a1a;
-    border-right: 1px solid #1a1a1a;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.customer {
-    position: absolute;
-    bottom: 0;
-    height: 80%;
-}
-
 .work-area {
     width: 40%;
     height: 100%;

@@ -1,6 +1,6 @@
 import './Recipes.css';
 import recipes from '../data/recipes.json';
-import DrinkRecipe from './DrinkRecipe';
+import DrinkRecipe from './drinks/DrinkRecipe';
 
 function MakeDrinks() {
     console.log(recipes.drinks);

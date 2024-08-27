@@ -1,9 +1,10 @@
 import './Game.css'
 import Setting from '../components/Setting';
-import Dialog from '../components/Dialog';
+import Dialog from '../components/dialog/Dialog';
 import Menu from '../components/Menu';
-import MakeDrinks from '../components/MakeDrinks';
+import MakeDrinks from '../components/drinks/MakeDrinks';
 import Recipes from '../components/Recipes';
+import Customer from '../components/Customer';
 import { useState } from 'react';
 
 function Game() {
@@ -14,9 +15,7 @@ function Game() {
       <div className="game">
         <div className='logo'>Echo Lounge</div>
         <div className="area">
-            <div className="character">
-              <img src="Dorothy_Haze.webp" alt="A customer." className='customer'/>
-            </div>
+            <Customer />
             <div className='work-area'>
                 <Menu setSelection={setSelection}/>
                 <div className="drink">

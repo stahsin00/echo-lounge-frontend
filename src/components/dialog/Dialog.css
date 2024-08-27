@@ -1,0 +1,106 @@
+.dialog-outer {
+    width: 100%;
+    height: 25%;
+    position: relative;
+    background-color: black;
+}
+
+.scroll-bar {
+    position: absolute;
+    bottom: 0;
+    right: 0.5rem;
+    width: 1rem;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgb(95, 95, 95);
+    z-index: 1;
+}
+
+.dialog {
+    padding: 1px 1.5rem;
+    width: 100%;
+    height: 100%;
+    font-size: xx-large;
+    overflow: auto;
+    border: 0.5rem solid rgb(61, 57, 61);
+    position: relative;
+    z-index: 2;
+}
+
+.dialog span {
+    color: rgb(255, 0, 76);
+}
+
+.dialog svg {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.deciding {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.deciding button {
+    width: 30%;
+    height: 7rem;
+    background-color: rgb(255, 0, 76);
+}
+
+.speaking, .observing, .listening, .waiting {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 0.5rem;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.speaking button {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    background-color: rgb(255, 0, 76);
+}
+
+.user-edit {
+    outline: none; /* Removes the default focus outline */
+    border: none; /* Removes any borders */
+    margin: 0; /* Removes margin */
+    font: inherit; /* Inherits the font from the parent element */
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+
+.user-edit:empty:before {
+    content: attr(placeholder); /* Adds a placeholder text */
+    color: #999; /* Placeholder text color */
+}
+
+.user-edit[contenteditable="true"]:empty:before {
+    content: "Type here..."; /* Placeholder text */
+    color: #999; /* Placeholder text color */
+}

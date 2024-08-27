@@ -37,7 +37,6 @@
 .single-amount {
     width: 1.65rem;
     height: 8rem;
-    background-color: rgba(194, 194, 194, 0.6);
 }
 
 .mixing-area-buttons {
@@ -52,6 +51,10 @@
     font-size: x-large;
     width: 100%;
     margin-top: 0.5rem;
+}
+
+.empty-amount {
+    background-color: rgba(194, 194, 194, 0.6);
 }
 
 .bubbly-quasar {

@@ -3,7 +3,7 @@ import Setting from '../components/Setting';
 import Dialog from '../components/dialog/Dialog';
 import Menu from '../components/Menu';
 import MakeDrinks from '../components/drinks/MakeDrinks';
-import Recipes from '../components/Recipes';
+import Recipes from '../components/drinks/Recipes';
 import Customer from '../components/Customer';
 import { useState } from 'react';
 

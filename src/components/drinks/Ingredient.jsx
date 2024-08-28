@@ -5,9 +5,13 @@ function Ingredient(props) {
 
   return (
     <div className={`ingredient ${props.ingredient}`}>
-        <FaMinus className='hover-cursor' onClick={() => props.handleRemoveIngredient(props.ingredient)}/>
+      <div className='ingredient-screen'>
         {props.name}
-        <FaPlus className='hover-cursor' onClick={() => props.handleAddIngredient(props.ingredient)}/>
+        <div className='ingredient-handlers'>
+          <FaMinus className='hover-cursor' onClick={() => props.handleRemoveIngredient(props.ingredient)}/>
+          <FaPlus className='hover-cursor' onClick={() => props.handleAddIngredient(props.ingredient)}/>
+        </div>
+      </div>
     </div>
   )
 }

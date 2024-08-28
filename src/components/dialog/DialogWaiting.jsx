@@ -6,7 +6,7 @@ function DialogWaiting() {
 
     return (
         <div className='waiting'>
-            <p>{customer} appears to be in thought<Dots /></p>
+            <p><Dots /></p>
         </div>
     );
 }

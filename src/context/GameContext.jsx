@@ -13,6 +13,8 @@ export function GameProvider(props) {
     const [customer, setCustomerState] = useState();
     const [observation, setObservation] = useState();
     const [speech, setSpeech] = useState();
+    const [expression, setExpression] = useState("neutral");
+    const [tone, setTone] = useState("neutral");
 
     useEffect( () => {
         const storedCustomer = localStorage.getItem('customer');
@@ -33,8 +35,8 @@ export function GameProvider(props) {
 
     const getNextCustomer = async () => {
         if (state === "Waiting") return;
-        setCustomer(null);
         setState("Waiting");
+        setCustomer(null);
 
         try {
             const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/new-customer`, {
@@ -81,6 +83,8 @@ export function GameProvider(props) {
             console.log(result);
 
             setSpeech(result.message);
+            setExpression(result.expression.toLowerCase());
+            setTone(result.tone.toLowerCase());
             setCustomer(result.customer);
             setState("Listening");
         } catch (e) {
@@ -117,6 +121,8 @@ export function GameProvider(props) {
             console.log(result);
 
             setSpeech(result.message);
+            setExpression(result.expression.toLowerCase());
+            setTone(result.tone.toLowerCase());
             setCustomer(result.customer);
             setState("Listening");
         } catch (e) {
@@ -139,10 +145,11 @@ export function GameProvider(props) {
 
     const value = {
         state,
-        setState,
         customer,
         observation,
         speech,
+        tone,
+        expression,
         getNextCustomer,
         serve,
         speak,

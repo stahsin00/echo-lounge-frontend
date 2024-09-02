@@ -1,12 +1,9 @@
-import './App.css'
-import Game from './pages/Game'
+import './App.css';
+import Game from './pages/Game';
 
+// TODO: add home and tutorial pages
 function App() {
-  return (
-    <>
-      <Game />
-    </>
-  )
+  return <Game />;
 }
 
-export default App
+export default App;

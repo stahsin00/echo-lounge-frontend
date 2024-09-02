@@ -1,91 +1,75 @@
 .drink-recipe {
-    padding: 0.5rem;
-    border-bottom: 1px solid black;
+  padding: 0.5rem;
+  border-bottom: 1px solid black;
 }
 
 .recipes .drink-recipe:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .drink-main {
-    background-color: black;
-    padding: 0.5rem;
-    padding-bottom: 1rem;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  background-color: black;
 }
 
 .drink-info {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .drink-info h1 {
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
 .drink-info p {
-    font-size: larger;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-size: larger;
 }
 
 .drink-heading {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.drink-flavors{
-    font-size: x-large;
+.drink-flavors {
+  font-size: x-large;
 }
 
 .sweet {
-    color: rgb(253, 161, 56);
+  color: var(--nebula-nectar);
 }
 
 .spicy {
-    color: rgb(255, 66, 113);
+  color: var(--plasma-peppers);
 }
 
 .bitter {
-    color: rgb(65, 236, 122);
+  color: var(--dark-matter-brew);
 }
 
 .bubbly {
-    color: rgb(57, 248, 248);
+  color: var(--bubbly-quasar);
 }
 
 .ingredients {
-    width: 100%;
-    padding: 0 1.5rem;
-    padding-top: 0.5rem;
-    font-size: x-large;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  padding: 0 1.5rem;
+  padding-top: 0.5rem;
+  font-size: x-large;
+  display: flex;
+  justify-content: space-between;
 }
 
-.bubbly-quasar-amount, .dark-matter-brew-amount, .nebula-nectar-amount, .plasma-peppers-amount {
-    width: 5rem;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
-    display: inline;
-    color: black;
-}
-
-.bubbly-quasar-amount {
-    background-color: rgb(57, 248, 248);
-}
-
-.dark-matter-brew-amount {
-    background-color: rgb(65, 236, 122);
-}
-
-.nebula-nectar-amount {
-    background-color: rgb(253, 161, 56);
-}
-
-.plasma-peppers-amount {
-    background-color: rgb(255, 66, 113);
+.drink-amount {
+  width: 5rem;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline;
+  text-align: center;
+  color: black;
 }

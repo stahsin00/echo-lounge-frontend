@@ -1,42 +1,26 @@
 .ingredient {
-    width: 100%;
-    background-color: transparent;
-    border-left: 1px solid rgba(194, 194, 194, 0.2);
-    border-top: 1px solid rgba(194, 194, 194, 0.2);
+  width: 100%;
+  background-color: transparent;
+  border-left: 1px solid rgba(194, 194, 194, 0.2);
+  border-top: 1px solid rgba(194, 194, 194, 0.2);
 }
 
 .ingredient-screen {
-    font-size: x-large;
-    width: 90%;
-    height: 5rem;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 8px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  font-size: x-large;
+  width: 90%;
+  height: 5rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .ingredient-handlers {
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    border: none !important;
-}
-
-.bubbly-quasar {
-    color: rgb(57, 248, 248);
-}
-
-.dark-matter-brew {
-    color: rgb(65, 236, 122);
-}
-
-.nebula-nectar {
-    color: rgb(253, 161, 56);
-}
-
-.plasma-peppers {
-    color: rgb(255, 66, 113);
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  border: none !important;
 }

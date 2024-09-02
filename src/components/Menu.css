@@ -1,39 +1,25 @@
 .menu {
-    height: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #1a1a1a;
+  height: 10%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #1a1a1a;
 }
 
-.main-button {
-    background-color: rgb(255, 0, 76);
-    font-size: x-large;
-    margin: 2px;
+#make-drinks-button {
+  margin: 2px;
+  font-size: x-large;
 }
 
 .sub-menu {
-    display: flex;
-    gap: 1rem;
-    padding-right: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .sub-menu button {
-    font-size: larger;
-    color: black;
-    background-color: rgba(222, 217, 219, 0.9);
-    width: 8rem;
-}
-
-.sub-menu button:hover {
-    border-color: rgb(255, 0, 76);
-  }
-
-#exit-button {
-    color: rgb(255, 0, 76);
-}
-
-.button-icon {
-    margin-right: 4px;
+  width: 8rem;
 }

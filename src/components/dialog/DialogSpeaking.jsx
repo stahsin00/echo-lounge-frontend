@@ -3,27 +3,27 @@ import { useGame } from '../../context/GameContext';
 import './Dialog.css';
 
 function DialogSpeaking() {
-    const { listen } = useGame();
+  const { listen } = useGame();
 
-    const userInputRef = useRef(null);
+  const userInputRef = useRef(null);
 
-    const handleSpeak = () => {
-        let userInput = "";
+  const handleSpeak = () => {
+    let userInput = '';
 
-        if (userInputRef.current) {
-            userInput = userInputRef.current.textContent;
-            userInputRef.current.textContent = "";
-        }
-
-        listen(userInput);
+    if (userInputRef.current) {
+      userInput = userInputRef.current.textContent;
+      userInputRef.current.textContent = '';
     }
 
-    return (
-        <div className='speaking'>
-            <p className='user-edit' contentEditable="true"  ref={userInputRef}></p>
-            <button onClick={handleSpeak}>Speak</button>
-        </div>
-    );
+    listen(userInput);
+  };
+
+  return (
+    <div className="speaking">
+      <p className="user-edit" contentEditable="true" ref={userInputRef}></p>
+      <button className="primary-button" onClick={handleSpeak}>Speak</button>
+    </div>
+  );
 }
 
-export default DialogSpeaking
+export default DialogSpeaking;

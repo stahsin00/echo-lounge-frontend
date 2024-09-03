@@ -1,0 +1,61 @@
+.mixing-area {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    background-color: var(--secondary-color);
+  }
+  
+  .mixing-area img {
+    transform: translateY(-40px);
+    opacity: 0.8;
+  }
+  
+  .ingredient-amounts {
+    z-index: 2;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--secondary-color);
+  }
+  
+  .ingredient-row {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .single-ingredient-amount {
+    width: 1.65rem;
+    height: 8rem;
+  }
+  
+  .empty-background {
+    background-color: rgba(255, 255, 255, 0.288);
+  }
+  
+  .mixing-area-buttons {
+    position: absolute;
+    bottom: 0;
+  
+    width: 100%;
+    border-top: 1px solid var(--highlight-color);
+  
+    font-size: x-large;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: var(--secondary-color);
+  }
+  
+  .mixing-area-buttons button {
+    width: 95%;
+    height: auto;
+    margin-top: 0.5rem;
+  }

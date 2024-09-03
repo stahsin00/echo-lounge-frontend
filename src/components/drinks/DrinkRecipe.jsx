@@ -9,7 +9,7 @@ function DrinkRecipe(props) {
             <h1>{props.name}</h1>
             <div className="drink-flavors">
               {props.flavors.map((flavor) => (
-                <span className={flavor}> {flavor} </span>
+                <span className={`${flavor}-text`}> {flavor} </span>
               ))}
             </div>
           </div>

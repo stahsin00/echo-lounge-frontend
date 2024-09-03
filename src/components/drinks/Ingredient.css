@@ -1,8 +1,8 @@
 .ingredient {
   width: 100%;
   background-color: transparent;
-  border-left: 1px solid rgba(194, 194, 194, 0.2);
-  border-top: 1px solid rgba(194, 194, 194, 0.2);
+  border-left: 1px solid var(--highlight-color);
+  border-top: 1px solid var(--highlight-color);
 }
 
 .ingredient-screen {

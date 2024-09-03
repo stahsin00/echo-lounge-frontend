@@ -9,7 +9,9 @@
   --primary-color: rgb(255, 0, 76);
   --primary-color-rgb: 255, 0, 76;
 
-  --secondary-color: rgb(26, 26, 26);
+  --secondary-color: rgb(29, 29, 29);
+  --highlight-color: rgba(194, 194, 194, 0.3);
+  --shadow-color: rgba(0, 0, 0, 0.7);
 
   --bubbly-quasar: rgb(57, 248, 248);
   --dark-matter-brew: rgb(65, 236, 122);
@@ -29,7 +31,7 @@ body {
   font-family: var(--normal-font);
   color: white;
 
-  background-color: #242424;
+  background-color: var(--secondary-color);
 }
 
 .hover-cursor:hover {
@@ -78,12 +80,22 @@ button {
   border-color: var(--primary-color);
 }
 
+button:disabled {
+  background-color: rgb(56, 56, 56);
+  color: rgb(119, 119, 119);
+}
+
+button:disabled:hover {
+  border-color: transparent;
+  cursor: default;
+}
+
 .button-icon {
   margin-right: 4px;
 }
 
 /* Ingredient Colors */
-.bubbly-quasar-text {
+.bubbly-quasar-text, .bubbly-text {
   color: var(--bubbly-quasar);
 }
 
@@ -91,7 +103,7 @@ button {
   background-color: var(--bubbly-quasar);
 }
 
-.dark-matter-brew-text {
+.dark-matter-brew-text, .bitter-text {
   color: var(--dark-matter-brew);
 }
 
@@ -99,7 +111,7 @@ button {
   background-color: var(--dark-matter-brew);
 }
 
-.nebula-nectar-text {
+.nebula-nectar-text, .sweet-text {
   color: var(--nebula-nectar);
 }
 
@@ -107,7 +119,7 @@ button {
   background-color: var(--nebula-nectar);
 }
 
-.plasma-peppers-text {
+.plasma-peppers-text, .spicy-text {
   color: var(--plasma-peppers);
 }
 

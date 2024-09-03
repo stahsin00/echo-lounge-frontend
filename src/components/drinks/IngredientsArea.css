@@ -1,0 +1,30 @@
+.ingredient-area {
+    height: 100%;
+    width: 50%;
+    background-color: var(--secondary-color);
+    border-right: 1px solid var(--highlight-color);
+  }
+  
+  .ingredient-list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ingredient-list div {
+    border-bottom: 1px solid var(--shadow-color);
+  }
+  
+  .ingredient-list div:last-child {
+    border-bottom: none;
+  }
+  
+  .machine-logo {
+    width: 100%;
+    height: 5rem;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }

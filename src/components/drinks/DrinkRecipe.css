@@ -1,6 +1,7 @@
 .drink-recipe {
   padding: 0.5rem;
-  border-bottom: 1px solid black;
+  border: 1px solid;
+  border-color: var(--highlight-color) black black var(--highlight-color);
 }
 
 .recipes .drink-recipe:last-child {
@@ -38,22 +39,6 @@
 
 .drink-flavors {
   font-size: x-large;
-}
-
-.sweet {
-  color: var(--nebula-nectar);
-}
-
-.spicy {
-  color: var(--plasma-peppers);
-}
-
-.bitter {
-  color: var(--dark-matter-brew);
-}
-
-.bubbly {
-  color: var(--bubbly-quasar);
 }
 
 .ingredients {

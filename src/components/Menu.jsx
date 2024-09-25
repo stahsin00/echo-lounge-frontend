@@ -29,11 +29,15 @@ function Menu(props) {
           <button
             className="secondary-button"
             onClick={() => props.setSelection('Settings')}
+            disabled={true}
           >
             <FaCog className="button-icon" />
             Settings
           </button>
-          <button className="secondary-button-special">
+          <button 
+            className="secondary-button-special"
+            disabled={true}
+          >
             <FaSignOutAlt className="button-icon" />
             Exit
           </button>

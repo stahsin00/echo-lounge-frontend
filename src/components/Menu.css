@@ -11,15 +11,16 @@
 
 #make-drinks-button {
   margin: 2px;
+  max-height: 100%;
   font-size: x-large;
 }
 
 .sub-menu {
-  padding-right: 1rem;
+  padding-right: 0.2rem;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .sub-menu button {
-  width: 8rem;
+  width: 7rem;
 }

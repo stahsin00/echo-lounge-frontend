@@ -45,12 +45,19 @@ export function GameProvider(props) {
         `${import.meta.env.VITE_BACKEND_URL}/new-customer`,
         {
           method: 'GET',
+          headers: {
+              'Cache-Control': 'no-cache, no-store, must-revalidate',
+              'Pragma': 'no-cache',
+              'Expires': '0'
+          }
         }
       );
 
       if (!response.ok) {
         throw new Error('Could not fetch new customer.');
       }
+
+      console.log(response);
 
       const result = await response.json();
 
